@@ -12,7 +12,7 @@
 
     function sendEmail($senderName, $email, $id) {
         $fromName  = 'Kartkomat';
-        $fromEmail = 'info@dawidrichert.com'; 
+        $fromEmail = 'noreply@dawidrichert.com'; 
         $appURL = 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']);
         
         $from = "From: $fromName <$fromEmail>\r\n";
