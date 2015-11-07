@@ -18,7 +18,7 @@
         $from = "From: $fromName <$fromEmail>\r\n";
         $replay = "Reply-To: $fromEmail\r\n";
         $params = "MIME-Version: 1.0\r\n";
-        $params .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+        $params .= "Content-type: text/plain; charset=utf-8\r\n";
         $mailtext = "Cześć!\r\n\r\n"
                 ."$senderName"." właśnie ".getFormattedWordPrzeslac($senderName)." Ci internetową kartkę!\r\n\r\n"
                 . "Możesz ją obejrzeć po kliknięciu w link poniżej:\r\n"
