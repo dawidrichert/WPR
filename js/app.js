@@ -3,6 +3,7 @@ $(document).ready(function(){
     selectFirstCard(this);
     handleMainFormSubmit();
     handleCardSubmittedOK(this);
+    handleCardsSelection();   
 });
 
 function initTooltips() {
@@ -38,8 +39,14 @@ function handleMainFormSubmit() {
 }
 
 function handleCardSubmittedOK(document) {
-    $( "#cardSubmittedOK" ).click(function() {
+    $('#cardSubmittedOK').click(function() {
         $('#mainForm')[0].reset();
         selectFirstCard(document);
+    });    
+}
+
+function handleCardsSelection() {
+    $('.radio').click(function() {
+        $(this).find('input').prop('checked', true);
     });    
 }
