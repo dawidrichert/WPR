@@ -1,0 +1,101 @@
+/* ---------------------
+    Global 
+----------------------*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1095px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 860px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 740px;
+    }
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    background-color: #F1F1F1;
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+}
+.form-group.required .control-label:after { 
+   content:" *";
+   color:indianred;
+}
+a {
+    color: #CDDC39;
+}
+a:focus, a:hover {
+    color: #b0dc39;
+    text-decoration: none;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #3A3A3A;
+}
+.container .text-muted {
+    color: #F1F1F1;
+    margin: 20px 0;
+}
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* ---------------------
+    Common 
+----------------------*/
+.title {
+    margin: 50px 0 50px 0;
+    color: #333;
+    cursor: default;
+}
+.title span {
+    color: #337AB7;
+}
+.title .glyphicon {
+    font-size: 24px;
+}
+
+/* ---------------------
+    Index 
+----------------------*/
+#mainForm {
+    clear: both;
+    padding-top: 10px;
+}
+#cards .radio {
+    display: inline-block;
+}
+#cards .radio label {
+    padding: 0;
+}
+#cards label > input {
+    display: none;
+}
+#cards label > input + img {
+    cursor: pointer;
+    border: 2px solid transparent;
+    opacity: 0.8;
+}
+#cards label > input:checked + img {
+    border: 2px solid #535353;
+    opacity: 1.0;
+}
+
+/* ---------------------
+    Show 
+----------------------*/
+.card-content {
+    padding: 50px;
+}
